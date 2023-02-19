@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio de sesión</title>
+		<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+		<h3>Create Account</h3>
+
+			<!-- Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre">
+					<img src="imagenes/x.png" height="25px" width="25px"> 
+				</div>
+				<p class="formulario__input-error">Rellene este campo</p>
+			</div>
+			
+			<!-- Email -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Email</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo">
+					<img src="imagenes/x.png" height="25px" width="25px"> 
+				</div>
+				<p class="formulario__input-error">Rellene este campo correctamente</p>
+			</div>
+
+			<!-- Clave -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Clave</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<img src="imagenes/x.png" height="25px" width="25px"> 
+				</div>
+				<p class="formulario__input-error">Rellene este campo correctamente</p>
+			</div>
+
+			<!-- Clave 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Clave</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<img src="imagenes/x.png" height="25px" width="25px">
+				</div>
+				<p class="formulario__input-error">Ambas claves deben ser iguales</p>
+			</div>
+
+			
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><img src="imagenes/exclamacion.png" height="25px" width="25px">  <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Su ormulario ha sido enviado, muchas gracias por su colavoración</p>
+			</div>
+		</form>
+	</main>
+	<script src="js/index.js"></script>
+</body>
+</html>
